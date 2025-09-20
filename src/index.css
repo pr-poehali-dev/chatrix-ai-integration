@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -6,32 +6,32 @@
 
 @layer base {
   :root {
-    --background: 248 250 252;
-    --foreground: 30 41 59;
+    --background: 255 255 255;
+    --foreground: 29 29 31;
 
     --card: 255 255 255;
-    --card-foreground: 30 41 59;
+    --card-foreground: 29 29 31;
 
     --popover: 255 255 255;
-    --popover-foreground: 30 41 59;
+    --popover-foreground: 29 29 31;
 
-    --primary: 37 99 235;
-    --primary-foreground: 248 250 252;
+    --primary: 255 149 0;
+    --primary-foreground: 255 255 255;
 
-    --secondary: 100 116 139;
-    --secondary-foreground: 248 250 252;
+    --secondary: 142 142 147;
+    --secondary-foreground: 29 29 31;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 247 247 247;
+    --muted-foreground: 142 142 147;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 247 247 247;
+    --accent-foreground: 29 29 31;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
+    --border: 229 229 234;
+    --input: 229 229 234;
     --ring: 222.2 84% 4.9%;
 
     --radius: 0.5rem;
@@ -100,11 +100,15 @@
   body {
     @apply bg-background text-foreground font-sans;
     font-family:
-      "Open Sans",
+      "Inter",
       -apple-system,
       BlinkMacSystemFont,
+      "SF Pro Display",
       system-ui,
       sans-serif;
+    font-weight: 400;
+    line-height: 1.47;
+    letter-spacing: -0.022em;
   }
 
   h1,
@@ -117,7 +121,11 @@
       "Inter",
       -apple-system,
       BlinkMacSystemFont,
+      "SF Pro Display",
       system-ui,
       sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.025em;
+    line-height: 1.1;
   }
 }
